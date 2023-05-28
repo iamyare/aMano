@@ -219,9 +219,6 @@ document.addEventListener("keydown", (e) => {
 if (window.location.pathname == "/aMano/limpio.html") {
 	//cargar el texto guardado en localStorage
 	output.innerHTML = localStorage.getItem("escrito");
-	window.onload = () => {
-		window.print();
-	};
 }
 
 const onChangeUnit = (unidad) => {
