@@ -156,7 +156,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="modal fade" role="dialog" tabindex="-1" id="modalConfig">
+
+		<div id="modalConfig" class="modal fade" role="dialog" tabindex="-1">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -170,19 +171,141 @@
 					</div>
 					<div class="modal-body">
 						<form>
-							<span class="mt-1">Fuentes</span
-							><input class="form-control form-control-sm" type="file" multiple /><span class="mt-2"
-								>Fuentes</span
-							><input class="form-control" type="number" />
+							<div class="container">
+								<div class="row gy-2 row-cols-1">
+									<div class="col">
+										<h5 class="text-secondary">Configuración Fuentes</h5>
+									</div>
+									<div class="col">
+										<label class="form-label">Fuentes</label
+										><input
+											id="inputFuentes"
+											class="form-control"
+											type="file"
+											required
+											onchange="directorioFuentes(this.files)"
+										/><span style="color: var(--bs-gray-500); font-size: 15px"
+											>Hay 5 fuentes de letras que se pueden utilizar</span
+										>
+									</div>
+									<div class="col d-flex justify-content-between align-items-center">
+										<label class="form-label">Tamaño de Fuente</label>
+										<div class="d-flex align-items-center gap-1">
+											<input
+												class="form-control"
+												id="inputSizeFont"
+												type="number"
+												style="width: 80px"
+												value="40"
+											/><span class="text-secondary">Px</span>
+										</div>
+									</div>
+									<div class="col d-flex justify-content-between align-items-center">
+										<label class="form-label">Salto de Linea</label>
+										<div class="d-flex align-items-center gap-1">
+											<input
+												class="form-control"
+												id="inputSaltoLinea"
+												type="number"
+												style="width: 80px"
+												value="40"
+											/><span class="text-secondary">Px</span>
+										</div>
+									</div>
+									<div class="col">
+										<hr />
+									</div>
+									<div class="col">
+										<h5 class="text-secondary">Configuración Pagina</h5>
+									</div>
+									<div class="col">
+										<label class="form-label">Tamaño de Pagina</label
+										><select class="form-select" id="inputTamanoPAge">
+											<option value="carta" selected>Carta</option>
+											<option value="a4">A4</option>
+											<option value="legal">Legal</option>
+										</select>
+									</div>
+									<div class="col d-flex justify-content-between align-items-center">
+										<label class="form-label">Unidad Medida</label>
+										<div class="dropdown">
+											<button
+												class="btn btn-light dropdown-toggle"
+												aria-expanded="false"
+												data-bs-toggle="dropdown"
+												type="button"
+												id="dropdownMenuButtonUnidadMedida"
+											>
+												Cm 
+											</button>
+											<div class="dropdown-menu">
+												<a class="dropdown-item" onclick="onChangeUnit('cm')">cm</a>
+												<a class="dropdown-item" onclick="onChangeUnit('mm')">mm</a>
+												<a class="dropdown-item" onclick="onChangeUnit('in')">in</a>
+											</div>
+										</div>
+									</div>
+									<div class="col">
+										<label class="form-label">Margenes</label>
+										<div class="row gx-4 gy-2 row-cols-2">
+											<div class="col">
+												<label class="form-label">Arriba </label>
+												<div class="d-flex align-items-center gap-2">
+													<input
+														id="inputMargenArriba"
+														class="form-control"
+														type="number"
+														value="1"
+													/><span class="text-secondary unidadExp">Cm</span>
+												</div>
+											</div>
+											<div class="col">
+												<label class="form-label">Abajo </label>
+												<div class="d-flex align-items-center gap-2">
+													<input
+														id="inputMargenAbajo"
+														class="form-control"
+														type="number"
+														value="1"
+													/><span class="text-secondary unidadExp">Cm</span>
+												</div>
+											</div>
+											<div class="col">
+												<label class="form-label">Izquierda </label>
+												<div class="d-flex align-items-center gap-2">
+													<input
+														id="inputMargenIzq"
+														class="form-control"
+														type="number"
+														value="1"
+													/><span class="text-secondary unidadExp">Cm</span>
+												</div>
+											</div>
+											<div class="col">
+												<label class="form-label">Derecha </label>
+												<div class="d-flex align-items-center gap-2">
+													<input
+														id="inputMargenDer"
+														class="form-control"
+														type="number"
+														value="1"
+													/><span class="text-secondary unidadExp">Cm</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</form>
 					</div>
 					<div class="modal-footer">
 						<button class="btn btn-light" type="button" data-bs-dismiss="modal">Cerrar</button
-						><button class="btn btn-primary" type="button" onclick="setConfig()">Guardar</button>
+						><button class="btn btn-warning" type="button" onclick="setConfig()">Guardar</button>
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 		<script src="./assets/js/controlador.js"></script>
 	</body>
