@@ -2,7 +2,7 @@
 /*Import fuentes de assets/fonts/Yare1-Regular.ttf*/
 @font-face {
 	font-family: "Yare1-Regular";
-	src: url("/assets/fonts/Yare1-Regular.ttf");
+	src: url("../fonts/Yare1-Regular.ttf");
 }
 @font-face {
 	font-family: "Yare2-Regular";
