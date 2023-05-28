@@ -7,12 +7,12 @@ let unidadMedida = "cm";
 
 //Comprobar sin hay un localStorage llamado "escrito"
 if (localStorage.getItem("escrito")) {
-	if (window.location.pathname == "/aMano/index.html" || window.location.pathname == "/") {
+	if (window.location.pathname == "/index.html" || window.location.pathname == "/") {
 		localStorage.removeItem("escrito");
 	}
 }
 
-if (window.location.pathname == "/aMano/index.html" || window.location.pathname == "/") {
+if (window.location.pathname == "/index.html" || window.location.pathname == "/") {
 	//comprobamos si hay configuracion en el localStorage
 	if (!localStorage.getItem("config")) {
 		//Si no hay configuracion, la creamos

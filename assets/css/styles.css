@@ -2,23 +2,23 @@
 /*Import fuentes de assets/fonts/Yare1-Regular.ttf*/
 @font-face {
 	font-family: "Yare1-Regular";
-	src: url("/assets/fonts/Yare1-Regular.ttf");
+	src: url("aMano/assets/fonts/Yare1-Regular.ttf");
 }
 @font-face {
 	font-family: "Yare2-Regular";
-	src: url("/assets/fonts/Yare2-Regular.ttf");
+	src: url("aMano/assets/fonts/Yare2-Regular.ttf");
 }
 @font-face {
 	font-family: "Yare3-Regular";
-	src: url("/assets/fonts/Yare3-Regular.ttf");
+	src: url("aMano/assets/fonts/Yare3-Regular.ttf");
 }
 @font-face {
 	font-family: "Yare4-Regular";
-	src: url("/assets/fonts/Yare4-Regular.ttf");
+	src: url("aMano/assets/fonts/Yare4-Regular.ttf");
 }
 @font-face {
 	font-family: "Yare5-Regular";
-	src: url("/assets/fonts/Yare5-Regular.ttf");
+	src: url("aMano/assets/fonts/Yare5-Regular.ttf");
 }
 
 * {
