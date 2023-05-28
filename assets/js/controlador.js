@@ -49,11 +49,9 @@ if (window.location.pathname == "/index.html" || window.location.pathname == "/"
 	inputMargenDer.value = config.margenDer;
 	//Seleccionar el tamaño de la pagina en el select segun el value
 	inputTamanoPAge.value = config.sizePage;
-
-	console.log(config);
 }
 
-let titleOpction = false;
+let titleOpction = true;
 
 const reescribir = () => {
 	tipografiaAleatoria();
@@ -141,7 +139,6 @@ const setConfig = () => {
 
 	//Comprobar que los valores no esten vacios
 	if (
-		//inputFuentes == "" ||
 		inputSizeFont == "" ||
 		inputSaltoLinea == "" ||
 		inputTamanoPAge == "" ||
@@ -168,7 +165,6 @@ const setConfig = () => {
 	};
 
 	localStorage.setItem("config", JSON.stringify(config));
-	console.log(getConfig());
 	//Ocultar el modal
 	const modalConfig = new bootstrap.Modal(document.getElementById("modalConfig"));
 	modalConfig.hide();
