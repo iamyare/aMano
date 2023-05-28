@@ -7,12 +7,12 @@ let unidadMedida = "cm";
 
 //Comprobar sin hay un localStorage llamado "escrito"
 if (localStorage.getItem("escrito")) {
-	if (window.location.pathname == "/index.html" || window.location.pathname == "/") {
+	if (window.location.pathname == "/") {
 		localStorage.removeItem("escrito");
 	}
 }
 
-if (window.location.pathname == "/index.html" || window.location.pathname == "/") {
+if (window.location.pathname == "/") {
 	//comprobamos si hay configuracion en el localStorage
 	if (!localStorage.getItem("config")) {
 		//Si no hay configuracion, la creamos
@@ -212,7 +212,7 @@ document.addEventListener("keydown", (e) => {
 	if (e.ctrlKey && e.key == "i") {
 		//obtener #output
 		let output = document.getElementById("output");
-		window.location.href = "index.html";
+		window.location.href = "/";
 	}
 });
 
@@ -221,7 +221,7 @@ if (window.location.pathname == "/limpio.html") {
 	output.innerHTML = localStorage.getItem("escrito");
 	window.onload = () => {
 		window.print();
-		window.location.href = "index.html";
+		window.location.href = "/";
 	};
 }
 
