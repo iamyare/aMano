@@ -6,43 +6,43 @@
 }
 @font-face {
 	font-family: "Yare2-Regular";
-	src: url("./assets/fonts/Yare2-Regular.ttf");
+	src: url("/aMano/assets/fonts/Yare2-Regular.ttf");
 }
 @font-face {
 	font-family: "Yare3-Regular";
-	src: url("./assets/fonts/Yare3-Regular.ttf");
+	src: url("/aMano/assets/fonts/Yare3-Regular.ttf");
 }
 @font-face {
 	font-family: "Yare4-Regular";
-	src: url("./assets/fonts/Yare4-Regular.ttf");
+	src: url("/aMano/assets/fonts/Yare4-Regular.ttf");
 }
 @font-face {
 	font-family: "Yare5-Regular";
-	src: url("./assets/fonts/Yare5-Regular.ttf");
+	src: url("/aMano/assets/fonts/Yare5-Regular.ttf");
 }
 @font-face {
 	font-family: "Yare6-Regular";
-	src: url("./assets/fonts/Yare6-Regular.ttf");
+	src: url("/aMano/assets/fonts/Yare6-Regular.ttf");
 }
 @font-face {
 	font-family: "Yare7-Regular";
-	src: url("./assets/fonts/Yare7-Regular.ttf");
+	src: url("/aMano/assets/fonts/Yare7-Regular.ttf");
 }
 @font-face {
 	font-family: "Yare8-Regular";
-	src: url("./assets/fonts/Yare8-Regular.ttf");
+	src: url("/aMano/assets/fonts/Yare8-Regular.ttf");
 }
 @font-face {
 	font-family: "Yare9-Regular";
-	src: url("./assets/fonts/Yare9-Regular.ttf");
+	src: url("/aMano/assets/fonts/Yare9-Regular.ttf");
 }
 @font-face {
 	font-family: "Yare10-Regular";
-	src: url("./assets/fonts/Yare10-Regular.ttf");
+	src: url("/aMano/assets/fonts/Yare10-Regular.ttf");
 }
 @font-face {
 	font-family: "Yare1-Bold";
-	src: url("./assets/fonts/bold/Yare1-Bold.ttf");
+	src: url("/aMano/assets/fonts/bold/Yare1-Bold.ttf");
 }
 * {
 	font-family: "Montserrat", sans-serif;
