@@ -197,9 +197,7 @@ const setConfig = () => {
 	};
 
 	localStorage.setItem("config", JSON.stringify(config));
-	//Ocultar el modal
-	const modalConfig = new bootstrap.Modal(document.getElementById("modalConfig"));
-	modalConfig.hide();
+	location.reload();
 };
 
 //Agregar fondo a #output
@@ -252,6 +250,7 @@ const directorioFuentes = (directorio) => {
 //Funcion que carga la configuracion guardada en localStorage
 const cargarConfig = () => {
 	let config = getConfig();
+
 	output.style.fontSize = `${config.sizeFont}px`;
 	output.style.lineHeight = `${config.saltoLinea}px`;
 	output.style.width = `${config.sizePage}${config.unidadMedida}`;
