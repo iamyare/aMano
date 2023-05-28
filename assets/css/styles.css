@@ -20,7 +20,30 @@
 	font-family: "Yare5-Regular";
 	src: url("/assets/fonts/Yare5-Regular.ttf");
 }
-
+@font-face {
+	font-family: "Yare6-Regular";
+	src: url("/assets/fonts/Yare6-Regular.ttf");
+}
+@font-face {
+	font-family: "Yare7-Regular";
+	src: url("/assets/fonts/Yare7-Regular.ttf");
+}
+@font-face {
+	font-family: "Yare8-Regular";
+	src: url("/assets/fonts/Yare8-Regular.ttf");
+}
+@font-face {
+	font-family: "Yare9-Regular";
+	src: url("/assets/fonts/Yare9-Regular.ttf");
+}
+@font-face {
+	font-family: "Yare10-Regular";
+	src: url("/assets/fonts/Yare10-Regular.ttf");
+}
+@font-face {
+	font-family: "Yare1-Bold";
+	src: url("/assets/fonts/bold/Yare1-Bold.ttf");
+}
 * {
 	font-family: "Montserrat", sans-serif;
 }
@@ -62,6 +85,21 @@
 .F5 {
 	font-family: "Yare5-Regular";
 }
+.F6 {
+	font-family: "Yare6-Regular";
+}
+.F7 {
+	font-family: "Yare7-Regular";
+}
+.F8 {
+	font-family: "Yare8-Regular";
+}
+.F9 {
+	font-family: "Yare9-Regular";
+}
+.F10 {
+	font-family: "Yare10-Regular";
+}
 
 #output {
 	font-size: 40px;
@@ -98,4 +136,9 @@
 .titulo-h3 {
 	font-size: 50px;
 	font-weight: 600;
+}
+
+.titulo-h1-bold {
+	font-size: 50px;
+	font-family: Yare1-Bold;
 }

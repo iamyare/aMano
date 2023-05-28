@@ -58,7 +58,7 @@ const reescribir = () => {
 };
 
 //Arreglo con las fuentes que se aplicarán aleatoriamente
-const fuentes = ["F1", "F2", "F3", "F4", "F5"];
+const fuentes = ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10"];
 
 const getConfig = () => {
 	let config = JSON.parse(localStorage.getItem("config"));
