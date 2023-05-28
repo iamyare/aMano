@@ -86,3 +86,16 @@
   */
 	width: 8.5in;
 }
+
+.titulo-h1 {
+	font-size: 80px;
+	font-weight: 600;
+}
+.titulo-h2 {
+	font-size: 60px;
+	font-weight: 600;
+}
+.titulo-h3 {
+	font-size: 50px;
+	font-weight: 600;
+}

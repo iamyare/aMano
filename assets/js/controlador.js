@@ -85,6 +85,14 @@ function tipografiaAleatoria() {
 				dentroDeTitulo = true;
 				linea = linea.replace("### ", "");
 				lineaNueva = formatearTitulo(linea);
+			} else if (linea.startsWith("##")) {
+				dentroDeTitulo = true;
+				linea = linea.replace("## ", "");
+				lineaNueva = formatearTituloH2(linea);
+			} else if (linea.startsWith("#")) {
+				dentroDeTitulo = true;
+				linea = linea.replace("# ", "");
+				lineaNueva = formatearTituloH1(linea);
 			} else {
 				lineaNueva = formatearParrafo(linea);
 			}
@@ -102,6 +110,30 @@ function tipografiaAleatoria() {
 	printModal.show();
 }
 
+function formatearTituloH1(linea) {
+	let lineaNueva = "";
+	linea.split("").map((letra) => {
+		let letraNueva = `<span class="${
+			fuentes[Math.floor(Math.random() * fuentes.length)]
+		}">${letra}</span>`;
+		lineaNueva += letraNueva;
+	});
+	lineaNueva = `<span class="titulo-h1">${lineaNueva}</span>`;
+	return lineaNueva;
+}
+
+function formatearTituloH2(linea) {
+	let lineaNueva = "";
+	linea.split("").map((letra) => {
+		let letraNueva = `<span class="${
+			fuentes[Math.floor(Math.random() * fuentes.length)]
+		}">${letra}</span>`;
+		lineaNueva += letraNueva;
+	});
+	lineaNueva = `<span class="titulo-h2">${lineaNueva}</span>`;
+	return lineaNueva;
+}
+
 function formatearTitulo(linea) {
 	let lineaNueva = "";
 	linea.split("").map((letra) => {
@@ -110,7 +142,7 @@ function formatearTitulo(linea) {
 		}">${letra}</span>`;
 		lineaNueva += letraNueva;
 	});
-	lineaNueva = `<span class="titulo">${lineaNueva}</span>`;
+	lineaNueva = `<span class="titulo-h3">${lineaNueva}</span>`;
 	return lineaNueva;
 }
 
