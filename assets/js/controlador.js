@@ -7,12 +7,12 @@ let unidadMedida = "cm";
 
 //Comprobar sin hay un localStorage llamado "escrito"
 if (localStorage.getItem("escrito")) {
-	if (window.location.pathname == "/aMano/") {
+	if (window.location.pathname == "/") {
 		localStorage.removeItem("escrito");
 	}
 }
 
-if (window.location.pathname == "/aMano/") {
+if (window.location.pathname == "/") {
 	//comprobamos si hay configuracion en el localStorage
 	if (!localStorage.getItem("config")) {
 		//Si no hay configuracion, la creamos
@@ -204,7 +204,7 @@ const setConfig = () => {
 const addBackground = () => {
 	//A;adir la clase fondo al elemento con id="output"
 	//output.classList.add("fondo");
-	window.location.href = "/aMano/limpio.html";
+	window.location.href = "/limpio.html";
 };
 
 //Si precionamos las teclas Control + i se ejecuta redireccionara a la pagina de inicio
@@ -212,13 +212,17 @@ document.addEventListener("keydown", (e) => {
 	if (e.ctrlKey && e.key == "i") {
 		//obtener #output
 		let output = document.getElementById("output");
-		window.location.href = "/aMano/";
+		window.location.href = "/";
 	}
 });
 
-if (window.location.pathname == "/aMano/limpio.html") {
+if (window.location.pathname == "/limpio.html") {
 	//cargar el texto guardado en localStorage
 	output.innerHTML = localStorage.getItem("escrito");
+	window.onload = () => {
+		window.print();
+		window.location.href = "/";
+	};
 }
 
 const onChangeUnit = (unidad) => {
