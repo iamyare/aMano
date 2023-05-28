@@ -221,7 +221,6 @@ if (window.location.pathname == "/aMano/limpio.html") {
 	output.innerHTML = localStorage.getItem("escrito");
 	window.onload = () => {
 		window.print();
-		window.location.href = "/aMano/";
 	};
 }
 
