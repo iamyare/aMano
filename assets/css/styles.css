@@ -134,3 +134,8 @@
 	font-size: 50px;
 	font-weight: 600;
 }
+
+#formatt p {
+	margin: 0px !important;
+	padding: 0px !important;
+}
